@@ -1,34 +1,58 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Image from "./image"
+import styled from "styled-components"
+import { Nav } from "../theme/index"
+
+const Wrapper = styled.div`
+  background: #fff;
+  height: 200px;
+  margin: 0 auto;
+  max-width: 75%;
+  padding: 1.5em 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`
+
+const Div = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+`
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+  <Wrapper>
+    <div>
+      <Link
+        to="/"
+        style={{
+          color: `white`,
+          textDecoration: `none`,
+        }}
+      >
+        <div style={{ width: `75px` }}>
+          <Image />
+        </div>
+      </Link>
     </div>
-  </header>
+    <Div>
+      <Nav
+        to="/"
+        activeStyle={{
+          color: "#754D63",
+          borderBottom: "3px solid #754D63",
+          borderRadius: 2,
+        }}
+      >
+        Home
+      </Nav>
+      <Nav to="/">Work</Nav>
+      <Nav to="/">About</Nav>
+      <Nav to="/">Schedule meeting</Nav>
+    </Div>
+  </Wrapper>
 )
 
 Header.propTypes = {

@@ -72,7 +72,16 @@ function SEO({ description, lang, meta, title }) {
       <link
         href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap"
         rel="stylesheet"
-      ></link>
+      />
+
+      <link
+        href="https://assets.calendly.com/assets/external/widget.css"
+        rel="stylesheet"
+      />
+      <script
+        src="https://assets.calendly.com/assets/external/widget.js"
+        type="text/javascript"
+      />
     </Helmet>
   )
 }

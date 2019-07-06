@@ -33,3 +33,23 @@ export const Nav = styled(Link)`
   padding: 0.25em 0;
   border-bottom: 3px solid transparent;
 `
+export const Button = styled.button`
+  background: #754d63;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  width: 220px;
+  height: 43px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  border: 0px;
+  border-radius: 4px;
+  margin-top: 1em;
+  outline: none;
+  transition: 750ms;
+  box-shadow: 0 5px 30px rgba(148, 151, 155, 0.6);
+  &:hover {
+    background: #9d6986;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+`

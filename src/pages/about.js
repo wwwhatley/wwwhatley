@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import TitleHeader from "../components/TitleHeader"
 import Headshot from "../components/headshot"
 import { Text } from "../theme/index"
+import CTA from "../components/cta"
 
 const Wrapper = styled.div`
   max-width: 960px;
@@ -37,6 +38,7 @@ const About = () => (
     <SEO title="Home" />
     <TitleHeader title="CEO | CTO | Technologist" type="about" />
     <Bio />
+    {/* <CTA /> */}
   </Layout>
 )
 

@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import TitleHeader from "../components/TitleHeader"
+import PortfolioGrid from "../components/portfoliogrid"
 
 const IndexPage = () => (
   <Layout>
@@ -13,6 +14,7 @@ const IndexPage = () => (
       title="Empowering clients to represent their best through technology"
       text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     />
+    <PortfolioGrid />
     {/* <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>

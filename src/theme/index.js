@@ -11,7 +11,7 @@ export const Title = styled.h1`
 
 export const Text = styled.p`
   color: #6c788c;
-  font-size: 18px;
+  font-size: ${props => (props.small ? "14px" : "18px")};
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   line-height: 31px;

@@ -14,6 +14,7 @@ const Div = styled.div`
   display: flex;
   align-content: center;
   height: 25px;
+  margin-top: 1.5em;
 `
 
 export default function TitleHeader({ title, text }) {

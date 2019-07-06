@@ -31,4 +31,5 @@ export const Nav = styled(Link)`
   font-weight: 500;
   text-decoration: none;
   padding: 0.25em 0;
+  border-bottom: 3px solid transparent;
 `

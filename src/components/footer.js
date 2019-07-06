@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import Image from "./image"
+import Logo from "./logo"
 import styled from "styled-components"
 import { Nav, Text } from "../theme/index"
 
@@ -22,7 +22,7 @@ const Div = styled.div`
   align-items: center;
 `
 
-const Footer = ({ siteTitle }) => (
+const Footer = () => (
   <Wrapper>
     <div>
       <Link
@@ -33,7 +33,7 @@ const Footer = ({ siteTitle }) => (
         }}
       >
         <div style={{ width: `75px` }}>
-          <Image />
+          <Logo />
         </div>
       </Link>
     </div>

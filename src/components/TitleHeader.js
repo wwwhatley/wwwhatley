@@ -17,23 +17,25 @@ const Div = styled.div`
   margin-top: 1.5em;
 `
 
-export default function TitleHeader({ title, text }) {
+export default function TitleHeader({ title, text, type }) {
   return (
     <div style={{ maxWidth: "960px", margin: "0 auto" }}>
       <Wrapper>
         <Title>{title}</Title>
         <Text>{text}</Text>
-        <Div>
-          <Text purple>View my work</Text>
-          <FaAngleRight
-            style={{
-              color: "#754d63",
-              height: "28px",
-              width: "16px",
-              marginLeft: ".5em",
-            }}
-          />
-        </Div>
+        {type === "home" && (
+          <Div>
+            <Text purple>View my work</Text>
+            <FaAngleRight
+              style={{
+                color: "#754d63",
+                height: "28px",
+                width: "16px",
+                marginLeft: ".5em",
+              }}
+            />
+          </Div>
+        )}
       </Wrapper>
     </div>
   )

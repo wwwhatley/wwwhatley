@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import Image from "./image"
+import Logo from "./logo"
 import styled from "styled-components"
 import { Nav } from "../theme/index"
 
@@ -33,7 +33,7 @@ const Header = ({ siteTitle }) => (
         }}
       >
         <div style={{ width: `75px` }}>
-          <Image />
+          <Logo />
         </div>
       </Link>
     </div>
@@ -48,8 +48,26 @@ const Header = ({ siteTitle }) => (
       >
         Home
       </Nav>
-      <Nav to="/">Work</Nav>
-      <Nav to="/">About</Nav>
+      <Nav
+        to="/work"
+        activeStyle={{
+          color: "#754D63",
+          borderBottom: "3px solid #754D63",
+          borderRadius: 2,
+        }}
+      >
+        Work
+      </Nav>
+      <Nav
+        to="/about"
+        activeStyle={{
+          color: "#754D63",
+          borderBottom: "3px solid #754D63",
+          borderRadius: 2,
+        }}
+      >
+        About
+      </Nav>
       <Nav to="/">Schedule meeting</Nav>
     </Div>
   </Wrapper>

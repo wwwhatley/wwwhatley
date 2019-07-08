@@ -14,15 +14,35 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 920px) {
+    width: 95%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3em 0;
+  }
 `
 
 const Div = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  @media (max-width: 920px) {
+    margin-top: 2em;
+  }
 `
 
-const Header = ({ siteTitle }) => (
+export const StyledA = styled.a`
+  color: #47566e;
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.25em 0;
+  border-bottom: 3px solid transparent;
+`
+
+const Header = () => (
   <Wrapper>
     <div>
       <Link
@@ -68,7 +88,9 @@ const Header = ({ siteTitle }) => (
       >
         About
       </Nav>
-      <Nav to="/">Schedule meeting</Nav>
+      <StyledA href="https://calendly.com/wwwhatley/15min-1">
+        Schedule meeting
+      </StyledA>
     </Div>
   </Wrapper>
 )

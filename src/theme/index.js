@@ -7,6 +7,10 @@ export const Title = styled.h1`
   font-family: "Ubuntu", sans-serif;
   font-weight: 600;
   line-height: 57px;
+  @media (max-width: 920px) {
+    font-size: 38px;
+    line-height: 50px;
+  }
 `
 
 export const Text = styled.p`
@@ -15,6 +19,7 @@ export const Text = styled.p`
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   line-height: 31px;
+
   ${props =>
     props.purple &&
     css`

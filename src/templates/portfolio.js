@@ -45,8 +45,9 @@ const Portfolio = ({ data }) => {
           />
         </Wrapper>
       </Fade>
-      <PortfolioGrid />
+
       <CTA />
+      <PortfolioGrid />
     </Layout>
   )
 }

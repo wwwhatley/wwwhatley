@@ -1,9 +1,6 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React, { Component } from "react"
-import Logo from "./logo"
 import styled from "styled-components"
-import { Button, Title, Text } from "../theme/index"
+import { Button, Subtitle, Text } from "../theme/index"
 
 const Wrapper = styled.div`
   margin: 4em auto;
@@ -13,6 +10,9 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
+  @media (max-width: 920px) {
+    max-width: 100%;
+  }
 `
 
 export default class Header extends Component {
@@ -32,7 +32,7 @@ export default class Header extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>Ready to chat?</Title>
+        <Subtitle>Want to discuss your project?</Subtitle>
         <Text>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum

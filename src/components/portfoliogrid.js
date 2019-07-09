@@ -12,6 +12,10 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+  @media (max-width: 920px) {
+    padding: 2em;
+    margin: 0;
+  }
 `
 
 const PackageImage = styled(Img)`
@@ -20,19 +24,19 @@ const PackageImage = styled(Img)`
   object-fit: contain;
   background-size: cover;
   background-position: center;
-  border-radius: 4px;
+  border-radius: 8px;
 `
 
 const Grid = styled.div`
   display: grid;
-  grid-gap: 50px;
-  width: 90%;
+  grid-gap: 25px;
+  width: 100%;
   margin: 1em auto 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   grid-auto-rows: auto;
-  @media (max-width: 720px) {
+  @media (max-width: 920px) {
     grid-auto-rows: auto;
-    width: 85%;
+    width: 100%;
   }
 `
 
@@ -45,7 +49,7 @@ const PackageWrapper = styled.div`
   background: #fff;
   border: 1.5px solid transparent;
   transition: 750ms;
-  border-radius: 4px;
+  border-radius: 8px;
   &:hover {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
     transform: translateY(-20px);

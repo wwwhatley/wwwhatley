@@ -14,12 +14,19 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 920px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `
 
 const Div = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  @media (max-width: 920px) {
+    margin-top: 2em;
+  }
 `
 
 const Footer = () => (
@@ -39,7 +46,7 @@ const Footer = () => (
     </div>
     <Div>
       <Text small style={{ marginRight: "3em" }}>
-        William Whatley © {new Date().getFullYear()}, Built with Gatsby.JS
+        William Whatley © {new Date().getFullYear()} | Built with Gatsby.JS
       </Text>
       <Nav to="/">Schedule meeting</Nav>
     </Div>

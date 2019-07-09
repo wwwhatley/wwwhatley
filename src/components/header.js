@@ -4,6 +4,7 @@ import React from "react"
 import Logo from "./logo"
 import styled from "styled-components"
 import { Nav } from "../theme/index"
+import Fade from "react-reveal/Fade"
 
 const Wrapper = styled.div`
   background: #fff;
@@ -40,9 +41,12 @@ export const StyledA = styled.a`
   text-decoration: none;
   padding: 0.25em 0;
   border-bottom: 3px solid transparent;
+  @media (max-width: 720px) {
+    font-size: 14px;
+  }
 `
 
-const Header = () => (
+const Navigation = () => (
   <Wrapper>
     <div>
       <Link
@@ -93,6 +97,17 @@ const Header = () => (
       </StyledA>
     </Div>
   </Wrapper>
+)
+
+const Header = ({ type }) => (
+  <React.Fragment>
+    {type === "home" && (
+      <Fade top>
+        <Navigation />
+      </Fade>
+    )}
+    {type !== "home" && <Navigation />}
+  </React.Fragment>
 )
 
 Header.propTypes = {

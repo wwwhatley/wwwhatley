@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import Fade from "react-reveal/Fade"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,15 +8,17 @@ import FullPortfolio from "../components/fullportfolio"
 import CTA from "../components/cta"
 
 const Work = () => (
-  <Layout>
+  <Layout type="about">
     <SEO title="Home" />
-    <TitleHeader
-      title="Recent work"
-      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
-      type="work"
-    />
-    <FullPortfolio />
-    <CTA />
+    <Fade bottom>
+      <TitleHeader
+        title="Recent work"
+        text="For me, the greatest reward that I receive from completing a project, are the lessons that I learned. I view all of my projects are learning opportunities, and look forward to self-developing and strengthening from every client that I serve."
+        type="work"
+      />
+      <FullPortfolio />
+      <CTA />
+    </Fade>
   </Layout>
 )
 

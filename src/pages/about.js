@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import Fade from "react-reveal/Fade"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -13,6 +13,7 @@ const Wrapper = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  margin-top: 3em;
 `
 
 const Bio = () => (
@@ -34,11 +35,13 @@ const Bio = () => (
 )
 
 const About = () => (
-  <Layout>
+  <Layout type="about">
     <SEO title="Home" />
-    <TitleHeader title="CEO | CTO | Technologist" type="about" />
-    <Bio />
-    {/* <CTA /> */}
+    <Fade bottom>
+      <TitleHeader title="CEO | CTO | Technologist" type="about" />
+      <Bio />
+      <CTA />
+    </Fade>
   </Layout>
 )
 

@@ -13,13 +13,27 @@ export const Title = styled.h1`
   }
 `
 
+export const Subtitle = styled.h2`
+  color: ${props => (props.white ? "#fff" : "#47566e")};
+  font-size: 26px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  margin-bottom: 6px;
+  @media (max-width: 920px) {
+    font-size: 22px;
+  }
+`
+
 export const Text = styled.p`
-  color: #6c788c;
+  color: ${props => (props.white ? "#fff" : "#6c788c")};
   font-size: ${props => (props.small ? "14px" : "18px")};
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   line-height: 31px;
-
+  @media (max-width: 720px) {
+    font-size: ${props => (props.small ? "12px" : "16px")};
+    line-height: 28px;
+  }
   ${props =>
     props.purple &&
     css`
@@ -37,6 +51,9 @@ export const Nav = styled(Link)`
   text-decoration: none;
   padding: 0.25em 0;
   border-bottom: 3px solid transparent;
+  @media (max-width: 720px) {
+    font-size: 14px;
+  }
 `
 export const Button = styled.button`
   background: #754d63;

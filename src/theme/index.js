@@ -87,6 +87,9 @@ export const Button = styled.button`
       align-items: center;
       justify-content: space-between;
       background: ${props => props.background};
+      @media (max-width: 920px) {
+        width: 100%;
+      }
       &:hover {
         background: ${props => props.background};
         box-shadow: none;

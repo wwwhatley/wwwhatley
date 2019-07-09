@@ -4,17 +4,18 @@ import { Button, Subtitle, Text } from "../theme/index"
 
 const Wrapper = styled.div`
   margin: 6em auto 4em auto;
-  max-width: 50%;
+  width: 50%;
+  max-width: 730px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   @media (max-width: 920px) {
-    max-width: 75%;
+    width: 75%;
   }
   @media (max-width: 720px) {
-    max-width: 100%;
+    width: 100%;
   }
 `
 

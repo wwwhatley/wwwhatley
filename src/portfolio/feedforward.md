@@ -39,6 +39,10 @@ Research points towards a shift in how medical programs worldwide are training t
 
 FeedForward bridges the current gap that exists between how medical learners, faculty members, and organizations interact with regard to understanding how entrustable professional activities (EPA’s) are being performed.
 
+<img alt="FeedForward" src="../images/feedforward_sample.png">
+
 Currently, evaluations are often times being completed weeks or even months after a specific task has been performed, which leaves faculty members with a vague remembrance of how the learner performed, and in turn, provides the learner with a less impactful understanding of how they can improve.
 
 By providing an easy-to-use application for medical learners and faculty, evaluations are requested on-the-spot, and evaluators are in a position to leave more thoughtful and accurate feedback. As a result, organizations are provided with meaningful metrics on how program members are performing.
+
+---

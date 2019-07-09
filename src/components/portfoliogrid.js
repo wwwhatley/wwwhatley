@@ -6,8 +6,9 @@ import Img from "gatsby-image"
 const Wrapper = styled.div`
   width: 100%;
   height: 100%;
+  max-width: 1600px;
   padding: 4em 0;
-  margin: 2em 0;
+  margin: 2em auto;
   display: flex;
   flex-direction: column;
   align-items: center;

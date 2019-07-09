@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import CTA from "../components/cta"
+import Fade from "react-reveal/Fade"
 
 const Wrapper = styled.div`
   width: 100%;
@@ -15,6 +16,7 @@ const Information = styled.div`
   width: 40%;
   margin: 0 auto;
   padding: 0 0.1em;
+  max-width: 730px;
   @media (max-width: 1160px) {
     width: 50%;
   }
@@ -34,12 +36,14 @@ const Portfolio = ({ data }) => {
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
-      <Wrapper>
-        <Information
-          className="portfolio"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </Wrapper>
+      <Fade bottom>
+        <Wrapper>
+          <Information
+            className="portfolio"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+        </Wrapper>
+      </Fade>
       <CTA />
     </Layout>
   )

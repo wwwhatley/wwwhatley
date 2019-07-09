@@ -663,10 +663,11 @@ pre tt:after {
 }
 
 .portfolio > hr {
-  margin: 2.5em auto;
-  width: 75%;
+  margin: 4em auto;
+  width: 25%;
   border: none;
   height: 2px;
-  color: #6c788c;
-  background-color: #6c788c;
+  color: rgba(0, 0, 0, 0.68);
+  background-color: rgba(0, 0, 0, 0.68);
+  border-radius: 8px;
 }

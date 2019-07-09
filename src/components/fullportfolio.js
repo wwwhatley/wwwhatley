@@ -6,8 +6,8 @@ import { Text, Subtitle, Button } from "../theme"
 import { FaAngleRight } from "react-icons/fa"
 
 const Wrapper = styled.div`
-  width: 100%;
-  max-width: 75%;
+  width: 75%;
+  max-width: 1600px;
   height: 100%;
   margin: 2em auto;
   display: flex;
@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
   @media (max-width: 920px) {
     flex-direction: column;
-    max-width: 100%;
+    width: 100%;
   }
 `
 

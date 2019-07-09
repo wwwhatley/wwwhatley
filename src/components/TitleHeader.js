@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 85%;
+  max-width: 960px;
   margin: 0 auto;
   margin-top: 2em;
   @media (max-width: 920px) {
@@ -18,7 +19,7 @@ const Wrapper = styled.div`
     margin-top: 0;
   }
   @media (max-width: 720px) {
-    max-width: 100%;
+    width: 100%;
   }
 `
 

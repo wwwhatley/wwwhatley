@@ -40,35 +40,13 @@ const Grid = styled.div`
   }
 `
 
-const PackageWrapper = styled.div`
-position: relative;
-margin: auto;
-margin-top: 4em;
-width: 100%:
-height: 100%;
-border-radius: 8px;
-cursor: pointer;
-@media (min-width: 2000px) {
-  max-width: 850px;
-}
-@media (min-width: 3000px) {
-  max-width: 1012px;
-}
-@media (max-width: 780px) {
-  width: 425px;
-}
-@media (max-width: 500px) {
-  width: 350px;
-}
-  }
-`
 const FullItemWrapper = styled.div`
   width: 100%;
-  height: 400px;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 2em;
+  padding: 2em;
   border-radius: 8px;
   background-color: ${props => props.background};
   transition: 500ms;
@@ -85,6 +63,11 @@ const Div = styled.div`
   width: 50%;
 `
 
+const ImgDiv = styled.div`
+  width: 95%;
+  max-width: 300px;
+`
+
 const FullItem = ({ data }) => (
   <Link to={data.frontmatter.path}>
     <FullItemWrapper background={`${data.frontmatter.color}`}>
@@ -92,12 +75,12 @@ const FullItem = ({ data }) => (
         <Subtitle white>{data.frontmatter.title}</Subtitle>
         <Text white>{data.frontmatter.subtitle}</Text>
       </Div>
-      <div style={{ width: "325px" }}>
+      <ImgDiv>
         <PackageImage
           alt={`William W Whatley ${data.title} Portfolio Image`}
           fluid={data.frontmatter.splash.childImageSharp.fluid}
         />
-      </div>
+      </ImgDiv>
     </FullItemWrapper>
   </Link>
 )

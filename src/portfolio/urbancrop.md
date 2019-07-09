@@ -1,9 +1,9 @@
 ---
-path: /urbancrop
+path: /work/urbancrop
 date: "2019-03-11"
 title: "UrbanCrop"
 image: "https://i.postimg.cc/NjdnHZnB/flow-Cam-Home.png"
 splash: "../images/urbancrop.jpg"
 color: "#47566E"
-subtitle: "Capable of capturing multiple angles of branded action, the Flow Cam's smooth GIF output is sure to leave a lasting impression. Paired with instant social sharing, everyone will know about the amazing content they're creating."
+subtitle: "UrbanCrop connects consumers to growers by enabling organizations and individuals alike to launch virtual micro-hubs, which facilitates the advertising, management, transactions, and distribution of local food products to local communities."
 ---

@@ -11,6 +11,9 @@ const Wrapper = styled.div`
   align-items: center;
   text-align: center;
   @media (max-width: 920px) {
+    max-width: 75%;
+  }
+  @media (max-width: 720px) {
     max-width: 100%;
   }
 `

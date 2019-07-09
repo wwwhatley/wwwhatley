@@ -7,19 +7,30 @@ import { Link } from "gatsby"
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: 75%;
+  width: 85%;
+  margin: 0 auto;
   margin-top: 2em;
   @media (max-width: 920px) {
-    width: 100%;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
     margin-top: 0;
   }
+  @media (max-width: 720px) {
+    max-width: 100%;
+  }
 `
 
 const Div = styled.div`
+  width: 75%;
+  margin: 0 auto;
+  @media (max-width: 720px) {
+    width: 100%;
+  }
+`
+
+const Row = styled.div`
   display: flex;
   align-content: center;
   height: 25px;
@@ -28,13 +39,13 @@ const Div = styled.div`
 
 export default function TitleHeader({ title, text, type }) {
   return (
-    <div style={{ maxWidth: "960px", margin: "0 auto" }}>
+    <Div>
       <Wrapper>
         <Title>{title}</Title>
         <Text>{text}</Text>
         {type === "home" && (
           <Link to="/work" style={{ textDecoration: "none" }}>
-            <Div>
+            <Row>
               <Text purple>View my work</Text>
               <FaAngleRight
                 style={{
@@ -44,10 +55,10 @@ export default function TitleHeader({ title, text, type }) {
                   marginLeft: ".5em",
                 }}
               />
-            </Div>
+            </Row>
           </Link>
         )}
       </Wrapper>
-    </div>
+    </Div>
   )
 }

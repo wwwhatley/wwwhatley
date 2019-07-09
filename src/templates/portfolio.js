@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import CTA from "../components/cta"
 import Fade from "react-reveal/Fade"
+import PortfolioGrid from "../components/portfoliogrid"
 
 const Wrapper = styled.div`
   width: 100%;
@@ -44,6 +45,7 @@ const Portfolio = ({ data }) => {
           />
         </Wrapper>
       </Fade>
+      <PortfolioGrid />
       <CTA />
     </Layout>
   )

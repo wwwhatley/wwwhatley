@@ -6,7 +6,6 @@ import SEO from "../components/seo"
 import TitleHeader from "../components/TitleHeader"
 import Headshot from "../components/headshot"
 import { Text } from "../theme/index"
-import CTA from "../components/cta"
 import Competencies from "../components/competencies"
 
 const Wrapper = styled.div`
@@ -44,8 +43,7 @@ const Bio = () => (
         engineering teams. He has mentored and even served as a judge for a
         public high school’s program in Florida, where he gave presentations and
         taught programming, usability, product ideation, UI/UX, and
-        entrepreneurship. where he gave presentations and taught programming,
-        usability, product ideation, UI/UX, and entrepreneurship.
+        entrepreneurship. Currently he's working on UrbanCrop.
       </Text>
     </Div>
   </Wrapper>
@@ -53,7 +51,7 @@ const Bio = () => (
 
 const About = () => (
   <Layout type="about">
-    <SEO title="Home" />
+    <SEO title="Hi!" />
     <Fade bottom>
       <TitleHeader title="CEO | CTO | Technologist" type="about" />
       <Bio />

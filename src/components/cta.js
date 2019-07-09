@@ -37,10 +37,10 @@ export default class Header extends Component {
       <Wrapper>
         <Subtitle>Want to discuss your project?</Subtitle>
         <Text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.
+          I'm currently open and accepting opportunities to discuss new project
+          work. If you're seeking professional services, I would love to meet
+          and see if I'm able to provide the value you need, while making sure
+          that our values and goals are aligned.
         </Text>
 
         <Button onClick={this.handleClick} type="button">

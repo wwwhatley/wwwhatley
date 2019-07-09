@@ -23,7 +23,7 @@ const DesktopWrapper = styled.div`
 
 const Work = () => (
   <Layout type="about">
-    <SEO title="Home" />
+    <SEO title="Work" />
     <Fade bottom>
       <TitleHeader
         title="Recent work"

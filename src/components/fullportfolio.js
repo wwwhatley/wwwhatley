@@ -2,7 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import { Link, graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import { Text, Subtitle } from "../theme"
+import { Text, Subtitle, Button } from "../theme"
+import { FaAngleRight } from "react-icons/fa"
 
 const Wrapper = styled.div`
   width: 100%;
@@ -74,6 +75,17 @@ const FullItem = ({ data }) => (
       <Div>
         <Subtitle white>{data.frontmatter.title}</Subtitle>
         <Text white>{data.frontmatter.subtitle}</Text>
+        <Button item background={data.frontmatter.button}>
+          {data.frontmatter.expertise}
+          <FaAngleRight
+            style={{
+              color: "#fff",
+              height: "28px",
+              width: "16px",
+              marginLeft: ".5em",
+            }}
+          />
+        </Button>
       </Div>
       <ImgDiv>
         <PackageImage
@@ -101,6 +113,8 @@ const FullPortfolio = () => (
                 color
                 image
                 subtitle
+                expertise
+                button
                 splash {
                   childImageSharp {
                     fluid(maxWidth: 1000, quality: 100) {

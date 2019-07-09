@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Button, Subtitle, Text } from "../theme/index"
 
 const Wrapper = styled.div`
-  margin: 4em auto;
+  margin: 6em auto 4em auto;
   max-width: 50%;
   display: flex;
   flex-direction: column;

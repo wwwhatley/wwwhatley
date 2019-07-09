@@ -74,4 +74,22 @@ export const Button = styled.button`
     background: #9d6986;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   }
+  ${props =>
+    props.item &&
+    css`
+      width: 75%;
+      text-align: left;
+      box-shadow: none;
+      font-size: 14px;
+      font-weight: 400;
+      margin-top: 2em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: ${props => props.background};
+      &:hover {
+        background: ${props => props.background};
+        box-shadow: none;
+      }
+    `}
 `

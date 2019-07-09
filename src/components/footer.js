@@ -27,6 +27,7 @@ const Div = styled.div`
   align-items: center;
   @media (max-width: 920px) {
     margin-top: 2em;
+    justify-content: center;
   }
 `
 

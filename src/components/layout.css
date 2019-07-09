@@ -8,6 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 article,
 aside,
 details,
@@ -621,4 +622,51 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.portfolio > h1 {
+  margin: 0.5em 0;
+  font-family: "Ubuntu", sans-serif;
+  color: #47566e;
+}
+
+.portfolio > h2 {
+  margin: 1.25em 0 1px 0;
+  font-family: "Ubuntu", sans-serif;
+  color: #47566e;
+  font-size: 26px;
+}
+
+.portfolio > h3 {
+  margin: 0.5em 0;
+  font-family: "Ubuntu", sans-serif;
+  color: #47566e;
+  font-size: 26px;
+}
+
+.portfolio > p {
+  margin: 0 0 1em 0;
+  font-family: "Ubuntu", sans-serif;
+  color: #6c788c;
+  font-weight: 400;
+  line-height: 33px;
+  font-size: 16px;
+}
+
+.portfolio > ul > li {
+  margin: 1em 0;
+  font-family: "Ubuntu", sans-serif;
+  color: #6c788c;
+  font-weight: 400;
+  line-height: 33px;
+  font-size: 16px;
+}
+
+.portfolio > hr {
+  margin: 2.5em auto;
+  width: 75%;
+  border: none;
+  height: 2px;
+  color: #6c788c;
+  background-color: #6c788c;
 }

@@ -20,19 +20,6 @@ const Wrapper = styled.div`
 `
 
 export default class Header extends Component {
-  componentWillMount() {
-    const script = document.createElement("script")
-
-    script.src = "https://assets.calendly.com/assets/external/widget.js"
-    script.async = true
-
-    document.body.appendChild(script)
-  }
-
-  handleClick = () => {
-    "Calendly.initPopupWidget({url: 'https://calendly.com/wwwhatley/15min-1'});"
-    return false
-  }
   render() {
     return (
       <Wrapper>
@@ -43,10 +30,9 @@ export default class Header extends Component {
           and see if I'm able to provide the value you need, while making sure
           that our values and goals are aligned.
         </Text>
-
-        <Button onClick={this.handleClick} type="button">
-          Schedule
-        </Button>
+        <a href="https://calendly.com/wwwhatley/15min-1">
+          <Button type="button">Schedule</Button>
+        </a>
       </Wrapper>
     )
   }

@@ -9,6 +9,42 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.fadeIn {
+  animation: 1s slidein;
+  animation-fill-mode: forwards;
+  transition: 750ms;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.fadeDown {
+  animation: 1s slidedown;
+  animation-fill-mode: forwards;
+  transition: 750ms;
+}
+
+@keyframes slidedown {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 article,
 aside,
 details,

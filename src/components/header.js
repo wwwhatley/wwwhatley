@@ -4,7 +4,6 @@ import React from "react"
 import Logo from "./logo"
 import styled from "styled-components"
 import { Nav } from "../theme/index"
-import Fade from "react-reveal/Fade"
 
 const Wrapper = styled.div`
   background: #fff;
@@ -102,9 +101,9 @@ const Navigation = () => (
 const Header = ({ type }) => (
   <React.Fragment>
     {type === "home" && (
-      <Fade top>
+      <div className="fadeDown">
         <Navigation />
-      </Fade>
+      </div>
     )}
     {type !== "home" && <Navigation />}
   </React.Fragment>

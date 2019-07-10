@@ -3,7 +3,6 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import CTA from "../components/cta"
-import Fade from "react-reveal/Fade"
 import PortfolioGrid from "../components/portfoliogrid"
 
 const Wrapper = styled.div`
@@ -34,17 +33,17 @@ const Information = styled.div`
 
 const Portfolio = ({ data }) => {
   const { markdownRemark } = data
-  const { frontmatter, html } = markdownRemark
+  const { html } = markdownRemark
   return (
     <Layout>
-      <Fade bottom>
+      <div className="fadeIn">
         <Wrapper>
           <Information
             className="portfolio"
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </Wrapper>
-      </Fade>
+      </div>
 
       <CTA />
       <PortfolioGrid />

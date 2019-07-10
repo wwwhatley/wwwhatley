@@ -1,5 +1,4 @@
 import React from "react"
-import Fade from "react-reveal/Fade"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -52,26 +51,26 @@ const Bio = () => (
 const About = () => (
   <Layout type="about">
     <SEO title="Hi!" />
-    {/* <Fade bottom> */}
-    <TitleHeader title="CEO | CTO | Technologist" type="about" />
-    <Bio />
-    <Competencies
-      title="Management"
-      text="leadership | execution | marketing | sales | team building | public speaking | product ideation | radical candor | product/system design | agile methodologies | scrum"
-    />
-    <Competencies
-      title="Technologies"
-      text="aws cloud infrastructure | javaScript | react native | react.JS | vue.JS | gatsby.JS |  node.JS | mongoDB | mySQL | express | graphQL | redux | flutter | firebase | git | github"
-    />
-    <Competencies
-      title="Languages"
-      text="english (native) | spanish (intermediate)"
-    />
-    <Competencies
-      title="Interests"
-      text="new technologies | sustainability | quantum computation | space | cooking | traveling | culture | people | "
-    />
-    {/* </Fade> */}
+    <div className="fadeIn">
+      <TitleHeader title="CEO | CTO | Technologist" type="about" />
+      <Bio />
+      <Competencies
+        title="Management"
+        text="leadership | execution | marketing | sales | team building | public speaking | product ideation | radical candor | product/system design | agile methodologies | scrum"
+      />
+      <Competencies
+        title="Technologies"
+        text="aws cloud infrastructure | javaScript | react native | react.JS | vue.JS | gatsby.JS |  node.JS | mongoDB | mySQL | express | graphQL | redux | flutter | firebase | git | github"
+      />
+      <Competencies
+        title="Languages"
+        text="english (native) | spanish (intermediate)"
+      />
+      <Competencies
+        title="Interests"
+        text="new technologies | sustainability | quantum computation | space | cooking | traveling | culture | people | "
+      />
+    </div>
   </Layout>
 )
 

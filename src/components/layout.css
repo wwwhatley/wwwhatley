@@ -10,7 +10,7 @@ body {
 }
 
 .fadeIn {
-  animation: 1s slidein;
+  animation: 1.5s slidein;
   animation-fill-mode: forwards;
   transition: 750ms;
 }
@@ -28,7 +28,7 @@ body {
 }
 
 .fadeDown {
-  animation: 1s slidedown;
+  animation: 1.5s slidedown;
   animation-fill-mode: forwards;
   transition: 750ms;
 }

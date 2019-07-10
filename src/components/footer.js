@@ -10,14 +10,16 @@ const Wrapper = styled.div`
   background: #fff;
   height: 200px;
   margin: 0 auto;
-  max-width: 75%;
+  width: 75%;
   padding: 1.5em 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   @media (max-width: 920px) {
     flex-direction: column;
+    width: 100%;
     justify-content: center;
+    align-items: space-between;
   }
 `
 

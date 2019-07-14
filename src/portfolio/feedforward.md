@@ -1,6 +1,6 @@
 ---
 path: /work/feedforward
-date: "2019-03-11"
+date: "2019-07-12"
 title: "FeedForward"
 splash: "../images/feedforward.jpg"
 color: "#98b0bf"

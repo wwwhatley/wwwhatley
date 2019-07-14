@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Logo from "./logo"
 import styled from "styled-components"
-import { Nav } from "../theme/index"
+import { Nav, StyledA } from "../theme/index"
 
 const Wrapper = styled.div`
   background: #fff;
@@ -29,19 +29,6 @@ const Div = styled.div`
   align-items: center;
   @media (max-width: 920px) {
     margin-top: 2em;
-  }
-`
-
-export const StyledA = styled.a`
-  color: #47566e;
-  font-size: 16px;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
-  text-decoration: none;
-  padding: 0.25em 0;
-  border-bottom: 3px solid transparent;
-  @media (max-width: 720px) {
-    font-size: 14px;
   }
 `
 
@@ -92,7 +79,7 @@ const Navigation = () => (
         About
       </Nav>
       <StyledA href="https://calendly.com/wwwhatley/15min-1">
-        Schedule meeting
+        Schedule time
       </StyledA>
     </Div>
   </Wrapper>

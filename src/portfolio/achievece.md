@@ -2,7 +2,6 @@
 path: /work/achievece
 date: "2019-03-11"
 title: "AchieveCE"
-image: "https://i.postimg.cc/NjdnHZnB/flow-Cam-Home.png"
 splash: "../images/achievece.jpg"
 color: "#754D63"
 button: "#895a74"

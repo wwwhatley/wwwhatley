@@ -52,9 +52,23 @@ export const Nav = styled(Link)`
   padding: 0.25em 0;
   border-bottom: 3px solid transparent;
   @media (max-width: 720px) {
-    font-size: 14px;
+    font-size: 12px;
   }
 `
+
+export const StyledA = styled.a`
+  color: #47566e;
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.25em 0;
+  border-bottom: 3px solid transparent;
+  @media (max-width: 720px) {
+    font-size: 12px;
+  }
+`
+
 export const Button = styled.button`
   background: #754d63;
   color: #fff;

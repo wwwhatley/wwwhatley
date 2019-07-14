@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Logo from "./logo"
 import styled from "styled-components"
-import { Nav, Text } from "../theme/index"
+import { Nav, Text, StyledA } from "../theme/index"
 import { FaGithub, FaInstagram, FaMediumM, FaLinkedinIn } from "react-icons/fa"
 
 const Wrapper = styled.div`
@@ -100,7 +100,9 @@ const Footer = () => (
           }}
         />
       </a>
-      <Nav to="/">Schedule meeting</Nav>
+      <StyledA href="https://calendly.com/wwwhatley/15min-1">
+        Schedule time
+      </StyledA>
     </Div>
   </Wrapper>
 )

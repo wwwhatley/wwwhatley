@@ -2,7 +2,6 @@
 path: /work/subchannel
 date: "2019-03-11"
 title: "Subchannel"
-image: "https://i.postimg.cc/NjdnHZnB/flow-Cam-Home.png"
 splash: "../images/subchannel.jpg"
 color: "#C93F50"
 button: "#d05a68"

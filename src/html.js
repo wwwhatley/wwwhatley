@@ -17,7 +17,7 @@ export default function HTML(props) {
         />
         <meta
           property="og:image"
-          content="https://i.postimg.cc/L5s3wPwx/globe.png"
+          content="https://i.postimg.cc/rzXzxX15/globe.png"
         />
         {props.headComponents}
       </head>

@@ -40,7 +40,7 @@ const Row = styled.div`
   align-items: center;
   margin: 0.5em 1em;
   @media (max-width: 920px) {
-    margin: 0.5em 0;
+    margin: 1em 0;
   }
 `
 

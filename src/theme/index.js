@@ -8,8 +8,8 @@ export const Title = styled.h1`
   font-weight: 600;
   line-height: 57px;
   @media (max-width: 920px) {
-    font-size: 38px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 48px;
   }
 `
 

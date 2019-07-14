@@ -6,6 +6,7 @@ import TitleHeader from "../components/TitleHeader"
 import Headshot from "../components/headshot"
 import { Text } from "../theme/index"
 import Competencies from "../components/competencies"
+import { Link } from "gatsby"
 
 const Wrapper = styled.div`
   max-width: 960px;
@@ -38,11 +39,18 @@ const Bio = () => (
     </div>
     <Div>
       <Text>
-        William has experience developing applications, as well as leading
-        engineering teams. He has mentored and even served as a judge for a
-        public high school’s program in Florida, where he gave presentations and
-        taught programming, usability, product ideation, UI/UX, and
-        entrepreneurship. Currently he's working on UrbanCrop.
+        I’ve been self-employed for three years, in which I’ve founded,
+        developed, and executed various technology startups--I’m an experienced
+        developer and subject-matter expert on a variety of cutting-edge
+        technologies and frameworks, and was even a public schools technology
+        mentor and judge for the Pinellas Education Foundation. Furthermore, my
+        network and connections are really what I’m most proud of--for skills
+        that I lack or cannot devote time towards, I have someone far more
+        qualified to fill the gap. Currently developing{" "}
+        <Link to="/work/urbancrop" style={{ color: "#F88747" }}>
+          UrbanCrop
+        </Link>{" "}
+        in Medellin, Colombia.
       </Text>
     </Div>
   </Wrapper>

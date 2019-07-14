@@ -13,6 +13,7 @@ body {
   animation: 1.5s slidein;
   animation-fill-mode: forwards;
   transition: 750ms;
+  -webkit-overflow-scrolling: touch;
 }
 
 @keyframes slidein {

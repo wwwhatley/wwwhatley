@@ -51,9 +51,11 @@ const PackageWrapper = styled.div`
   border: 1.5px solid transparent;
   transition: 750ms;
   border-radius: 8px;
-  &:hover {
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-    transform: translateY(-20px);
+  @media (min-width: 920px) {
+    &:hover {
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+      transform: translateY(-20px);
+    }
   }
 `
 

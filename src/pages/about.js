@@ -39,19 +39,22 @@ const Bio = () => (
     </div>
     <Div>
       <Text>
-        I’ve been self-employed for three years, in which I’ve founded,
-        developed, and executed various technology startups--I’m an experienced
-        developer and subject-matter expert on a variety of cutting-edge
-        technologies and frameworks, and was even a public schools technology
-        mentor and judge for the Pinellas Education Foundation. Furthermore, my
-        network and connections are really what I’m most proud of--for skills
-        that I lack or cannot devote time towards, I have someone far more
-        qualified to fill the gap. Currently developing{" "}
-        <Link to="/work/urbancrop" style={{ color: "#F88747" }}>
-          UrbanCrop
-        </Link>{" "}
-        in Medellin, Colombia.
+        I'm passionately curious about innovative technologies, business,
+        teaching, and a sustainable future. I live a life guided agilely in
+        principle, with open lenses and mind towards solving problems--I'm
+        rooted in belief that continued self-development is one of the most
+        important virtues; as times change and problems are solved, more issues
+        to fix emerge. I commit to a life of problem solving.
       </Text>
+      <div style={{ marginTop: ".5em" }}>
+        <Text>
+          Currently developing{" "}
+          <Link to="/work/urbancrop" style={{ color: "#F88747" }}>
+            UrbanCrop
+          </Link>{" "}
+          in Medellin, Colombia.
+        </Text>
+      </div>
     </Div>
   </Wrapper>
 )

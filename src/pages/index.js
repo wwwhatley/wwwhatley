@@ -14,8 +14,8 @@ const Index = () => (
         text="Hi there! I'm William and I'm passionate about utilizing my ever-evolving technology skills to provide value for you and your organization. I've served as a product owner, systems designer and engineer, executive, project manager, and developer. "
         type="home"
       />
+      <PortfolioGrid />
     </div>
-    <PortfolioGrid />
   </Layout>
 )
 

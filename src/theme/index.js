@@ -66,6 +66,7 @@ export const StyledA = styled.a`
   border-bottom: 3px solid transparent;
   @media (max-width: 720px) {
     font-size: 12px;
+    padding: 0;
   }
 `
 

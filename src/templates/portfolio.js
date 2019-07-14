@@ -58,7 +58,6 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
-        image
         subtitle
         splash {
           childImageSharp {

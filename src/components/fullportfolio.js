@@ -111,7 +111,6 @@ const FullPortfolio = () => (
                 path
                 title
                 color
-                image
                 subtitle
                 expertise
                 button

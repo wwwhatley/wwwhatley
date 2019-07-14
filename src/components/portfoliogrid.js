@@ -83,7 +83,6 @@ const PortfolioGrid = () => (
                 date(formatString: "MMMM DD, YYYY")
                 path
                 title
-                image
                 splash {
                   childImageSharp {
                     fluid(maxWidth: 1000, quality: 100) {

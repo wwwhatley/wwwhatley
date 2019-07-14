@@ -85,6 +85,7 @@ const PortfolioGrid = () => (
                 date(formatString: "MMMM DD, YYYY")
                 path
                 title
+                type
                 splash {
                   childImageSharp {
                     fluid(maxWidth: 1000, quality: 100) {
@@ -98,15 +99,22 @@ const PortfolioGrid = () => (
         }
       }
     `}
-    render={data => (
-      <Wrapper>
-        <Grid>
-          {data.allMarkdownRemark.edges.map(edge => (
-            <PortfolioLink key={edge.node.id} post={edge.node} />
-          ))}
-        </Grid>
-      </Wrapper>
-    )}
+    render={data => {
+      let newArr = data.allMarkdownRemark.edges.filter(edge => {
+        if (edge.node.frontmatter.type === "portfolio") {
+          return [...edge]
+        }
+      })
+      return (
+        <Wrapper>
+          <Grid>
+            {newArr.map(edge => (
+              <PortfolioLink key={edge.node.id} post={edge.node} />
+            ))}
+          </Grid>
+        </Wrapper>
+      )
+    }}
   />
 )
 

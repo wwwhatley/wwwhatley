@@ -4,6 +4,7 @@ exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
   const portfolio = path.resolve(`src/templates/portfolio.js`)
+  const writing = path.resolve(`src/templates/writing.js`)
 
   return graphql(`
     {
@@ -23,9 +24,10 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      let path = node.frontmatter.path
       createPage({
-        path: node.frontmatter.path,
-        component: portfolio,
+        path: path,
+        component: path.includes("work") ? portfolio : writing,
         context: {}, // additional data can be passed via context
       })
     })

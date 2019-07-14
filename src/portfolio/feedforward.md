@@ -7,6 +7,7 @@ color: "#98b0bf"
 button: "#83a0b2"
 subtitle: "FeedForward bridges the current gap that exists between how medical learners, faculty members, and organizations interact with regard to understanding how entrustable professional activities (EPA’s) are being performed."
 expertise: "Ideation, design, development, execution"
+type: "portfolio"
 ---
 
 <img alt="FeedForward" src="../images/feedforward-splash.png">

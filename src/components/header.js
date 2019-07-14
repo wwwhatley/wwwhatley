@@ -69,6 +69,16 @@ const Navigation = () => (
         Work
       </Nav>
       <Nav
+        to="/writing"
+        activeStyle={{
+          color: "#754D63",
+          borderBottom: "3px solid #754D63",
+          borderRadius: 2,
+        }}
+      >
+        Writing
+      </Nav>
+      <Nav
         to="/about"
         activeStyle={{
           color: "#754D63",

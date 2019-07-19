@@ -2,6 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import { Link, graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import { Subtitle, Text } from "../theme/index"
+import { FaAngleRight } from "react-icons/fa"
 
 const Wrapper = styled.div`
   width: 100%;
@@ -12,7 +14,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+
   @media (max-width: 920px) {
     padding: 2em;
     margin: 0;
@@ -31,7 +33,7 @@ const PackageImage = styled(Img)`
 const Grid = styled.div`
   display: grid;
   grid-gap: 25px;
-  width: 100%;
+  width: 50%;
   margin: 1em auto 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   grid-auto-rows: auto;
@@ -41,14 +43,15 @@ const Grid = styled.div`
   }
 `
 
-const PackageWrapper = styled.div`
+const PostWrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
   background: #fff;
+  padding: 2em 1.5em;
   border: 1.5px solid transparent;
+  border-bottom: 0.5px solid #e3e3e3;
   transition: 500ms;
   border-radius: 8px;
   @media (min-width: 920px) {
@@ -57,22 +60,64 @@ const PackageWrapper = styled.div`
       transform: translateY(-20px);
     }
   }
+  @media (max-width: 720px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
 `
 
-const PortfolioLink = ({ post }) => {
+const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin-right: 1em;
+  @media (max-width: 720px) {
+    margin-right: 0;
+    width: 100%;
+    align-items: center;
+    margin-top: 1.5em;
+  }
+`
+
+const Row = styled.div`
+  display: flex;
+  align-content: center;
+  height: 25px;
+  margin-top: 1em;
+`
+
+const PostLink = ({ post }) => {
   return (
     <Link to={post.frontmatter.path}>
-      <PackageWrapper>
-        <PackageImage
-          alt={`William W Whatley ${post.title} Portfolio Image`}
-          fluid={post.frontmatter.splash.childImageSharp.fluid}
-        />
-      </PackageWrapper>
+      <PostWrapper>
+        <Column>
+          <Subtitle>{post.frontmatter.title}</Subtitle>
+          <Text>{post.frontmatter.subtitle}</Text>
+          <Row>
+            <Text purple>Read more</Text>
+            <FaAngleRight
+              style={{
+                color: "#754d63",
+                height: "28px",
+                width: "16px",
+                marginLeft: ".5em",
+              }}
+            />
+          </Row>
+        </Column>
+        <div style={{ width: "200px" }}>
+          <PackageImage
+            alt={`William W Whatley ${post.title} Portfolio Image`}
+            fluid={post.frontmatter.splash.childImageSharp.fluid}
+          />
+        </div>
+      </PostWrapper>
     </Link>
   )
 }
 
-const PortfolioGrid = () => (
+const Posts = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -86,6 +131,7 @@ const PortfolioGrid = () => (
                 path
                 title
                 type
+                subtitle
                 splash {
                   childImageSharp {
                     fluid(maxWidth: 1000, quality: 100) {
@@ -101,7 +147,7 @@ const PortfolioGrid = () => (
     `}
     render={data => {
       let newArr = data.allMarkdownRemark.edges.filter(edge => {
-        if (edge.node.frontmatter.type === "portfolio") {
+        if (edge.node.frontmatter.type === "post") {
           return [...edge]
         }
       })
@@ -109,7 +155,7 @@ const PortfolioGrid = () => (
         <Wrapper>
           <Grid>
             {newArr.map(edge => (
-              <PortfolioLink key={edge.node.id} post={edge.node} />
+              <PostLink key={edge.node.id} post={edge.node} />
             ))}
           </Grid>
         </Wrapper>
@@ -118,4 +164,4 @@ const PortfolioGrid = () => (
   />
 )
 
-export default PortfolioGrid
+export default Posts

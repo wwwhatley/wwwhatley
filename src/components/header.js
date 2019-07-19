@@ -19,7 +19,7 @@ const Wrapper = styled.div`
     height: auto;
     flex-direction: column;
     justify-content: center;
-    padding: 3em 0;
+    padding: 2em 0 1em 0;
   }
 `
 

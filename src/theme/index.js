@@ -52,7 +52,7 @@ export const Nav = styled(Link)`
   padding: 0.25em 0;
   border-bottom: 3px solid transparent;
   @media (max-width: 720px) {
-    font-size: 12px;
+    font-size: 10px;
   }
 `
 
@@ -65,7 +65,7 @@ export const StyledA = styled.a`
   padding: 0.25em 0;
   border-bottom: 3px solid transparent;
   @media (max-width: 720px) {
-    font-size: 12px;
+    font-size: 10px;
     padding: 0;
   }
 `

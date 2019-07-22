@@ -1,9 +1,9 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React, { Component } from "react"
 import Logo from "./logo"
 import styled from "styled-components"
-import { Nav, StyledA } from "../theme/index"
+import { Nav } from "../theme/index"
 
 const Wrapper = styled.div`
   background: #fff;
@@ -88,23 +88,35 @@ const Navigation = () => (
       >
         About
       </Nav>
-      <StyledA href="https://calendly.com/wwwhatley/15min-1">
-        Schedule time
-      </StyledA>
+      <Nav
+        to="/schedule"
+        activeStyle={{
+          color: "#754D63",
+          borderBottom: "3px solid #754D63",
+          borderRadius: 2,
+        }}
+      >
+        Schedule now
+      </Nav>
     </Div>
   </Wrapper>
 )
 
-const Header = ({ type }) => (
-  <React.Fragment>
-    {type === "home" && (
-      <div className="fadeDown">
-        <Navigation />
-      </div>
-    )}
-    {type !== "home" && <Navigation />}
-  </React.Fragment>
-)
+class Header extends Component {
+  render() {
+    const { type } = this.props
+    return (
+      <React.Fragment>
+        {type === "home" && (
+          <div className="fadeDown ">
+            <Navigation />
+          </div>
+        )}
+        {type !== "home" && <Navigation />}
+      </React.Fragment>
+    )
+  }
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

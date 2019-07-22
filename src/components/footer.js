@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Logo from "./logo"
 import styled from "styled-components"
-import { Text, StyledA } from "../theme/index"
+import { Text, Nav } from "../theme/index"
 import { FaGithub, FaInstagram, FaMediumM, FaLinkedinIn } from "react-icons/fa"
 
 const Wrapper = styled.div`
@@ -110,9 +110,16 @@ const Footer = () => (
           />
         </a>
       </Row>
-      <StyledA href="https://calendly.com/wwwhatley/15min-1">
-        Schedule time
-      </StyledA>
+      <Nav
+        to="/schedule"
+        activeStyle={{
+          color: "#754D63",
+          borderBottom: "3px solid #754D63",
+          borderRadius: 2,
+        }}
+      >
+        Schedule now
+      </Nav>
     </Div>
   </Wrapper>
 )

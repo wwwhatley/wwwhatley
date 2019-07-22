@@ -1,6 +1,6 @@
 ---
 path: /work/urbancrop
-date: "2019-03-11"
+date: "2019-07-13"
 title: "UrbanCrop"
 splash: "../images/urbancrop.jpg"
 color: "#47566E"

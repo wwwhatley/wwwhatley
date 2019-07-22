@@ -1,6 +1,6 @@
 ---
 path: /work/subchannel
-date: "2019-03-11"
+date: "2019-07-09"
 title: "Subchannel"
 splash: "../images/subchannel.jpg"
 color: "#C93F50"

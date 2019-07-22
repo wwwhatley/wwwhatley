@@ -11,7 +11,14 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-
+        <meta
+          property="og:title"
+          content="William W. Whatley | Technologist, Executive"
+        />
+        <meta
+          property="og:image"
+          content="https://i.postimg.cc/rzXzxX15/globe.png"
+        />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

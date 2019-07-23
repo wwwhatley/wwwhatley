@@ -18,9 +18,14 @@ class Schedule extends Component {
       <Layout type="home">
         <SEO title="Schedule a meeting now | William Whatley" />
         <div
-          class="fadeIn calendly-inline-widget"
+          className="fadeIn calendly-inline-widget"
           data-url="https://calendly.com/wwwhatley/15min"
-          style={{ minWidth: 320, height: 630, minHeight: "100%" }}
+          style={{
+            minWidth: 320,
+            height: 630,
+            minHeight: "100%",
+            marginBottom: "4em",
+          }}
         ></div>
       </Layout>
     )

@@ -111,6 +111,7 @@ const Footer = () => (
         </a>
       </Row>
       <Nav
+        right
         to="/schedule"
         activeStyle={{
           color: "#754D63",
@@ -118,7 +119,7 @@ const Footer = () => (
           borderRadius: 2,
         }}
       >
-        Schedule now
+        Schedule time
       </Nav>
     </Div>
   </Wrapper>

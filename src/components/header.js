@@ -32,6 +32,19 @@ const Div = styled.div`
   }
 `
 
+const MobileWrapper = styled.div`
+  display: none;
+  @media (max-width: 385px) {
+    display: block;
+  }
+`
+const DesktopWrapper = styled.div`
+  display: none;
+  @media (min-width: 385px) {
+    display: block;
+  }
+`
+
 const Navigation = () => (
   <Wrapper>
     <div>
@@ -48,16 +61,18 @@ const Navigation = () => (
       </Link>
     </div>
     <Div>
-      <Nav
-        to="/"
-        activeStyle={{
-          color: "#754D63",
-          borderBottom: "3px solid #754D63",
-          borderRadius: 2,
-        }}
-      >
-        Home
-      </Nav>
+      <DesktopWrapper>
+        <Nav
+          to="/"
+          activeStyle={{
+            color: "#754D63",
+            borderBottom: "3px solid #754D63",
+            borderRadius: 2,
+          }}
+        >
+          Home
+        </Nav>
+      </DesktopWrapper>
       <Nav
         to="/work"
         activeStyle={{
@@ -89,6 +104,7 @@ const Navigation = () => (
         About
       </Nav>
       <Nav
+        right
         to="/schedule"
         activeStyle={{
           color: "#754D63",
@@ -96,7 +112,7 @@ const Navigation = () => (
           borderRadius: 2,
         }}
       >
-        Schedule now
+        Schedule time
       </Nav>
     </Div>
   </Wrapper>

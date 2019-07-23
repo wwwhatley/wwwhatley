@@ -45,7 +45,7 @@ export const Text = styled.p`
 export const Nav = styled(Link)`
   color: #47566e;
   font-size: 16px;
-  margin-right: 2.25em;
+  margin-right: ${props => (props.right ? "0" : "2.25em")};
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   text-decoration: none;
@@ -53,6 +53,7 @@ export const Nav = styled(Link)`
   border-bottom: 3px solid transparent;
   @media (max-width: 720px) {
     font-size: 10px;
+    padding: ${props => (props.right ? "0" : ".25em")};
   }
 `
 

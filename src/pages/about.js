@@ -52,7 +52,7 @@ const Bio = () => (
           <Link to="/work/urbancrop" style={{ color: "#F88747" }}>
             UrbanCrop
           </Link>{" "}
-          in Medellin, Colombia.
+          in Mexico City.
         </Text>
       </div>
     </Div>

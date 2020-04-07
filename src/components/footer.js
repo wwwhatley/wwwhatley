@@ -5,6 +5,7 @@ import Logo from "./logo"
 import styled from "styled-components"
 import { Text, Nav } from "../theme/index"
 import { FaGithub, FaInstagram, FaMediumM, FaLinkedinIn } from "react-icons/fa"
+import resume from "../images/whatley_resume_2020.pdf"
 
 const Wrapper = styled.div`
   background: #fff;
@@ -17,6 +18,7 @@ const Wrapper = styled.div`
   align-items: center;
   @media (max-width: 920px) {
     flex-direction: column;
+    height: 100%;
     width: 100%;
     justify-content: center;
     align-items: space-between;
@@ -28,7 +30,7 @@ const Div = styled.div`
   justify-content: space-evenly;
   align-items: center;
   @media (max-width: 920px) {
-    margin-top: 2em;
+    margin-top: 1em;
     justify-content: center;
     flex-direction: column;
   }
@@ -40,7 +42,24 @@ const Row = styled.div`
   align-items: center;
   margin: 0.5em 1em;
   @media (max-width: 920px) {
-    margin: 1em 0;
+    margin: 1em auto;
+  }
+`
+
+const Anchor = styled.a`
+  color: #47566e;
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.25em 0;
+  margin-right: 1.25em;
+  margin-left: 1em;
+  border-bottom: 3px solid transparent;
+  @media (max-width: 720px) {
+    font-size: 10px;
+    margin-right: 0;
+    margin-left: 0;
   }
 `
 
@@ -110,6 +129,9 @@ const Footer = () => (
           />
         </a>
       </Row>
+      <Anchor href={resume} download>
+        Resume
+      </Anchor>
       <Nav
         right
         to="/schedule"

@@ -77,7 +77,7 @@ const PortfolioGrid = () => (
     query={graphql`
       query {
         allMarkdownRemark(
-          limit: 5
+          limit: 6
           sort: { fields: [frontmatter___date], order: DESC }
         ) {
           edges {

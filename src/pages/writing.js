@@ -12,7 +12,7 @@ const Writing = () => (
     <div className="fadeIn">
       <TitleHeader
         title="Writing"
-        text="Collectively, I've received over 100,000 unique views through various channels for my writings. Although I try to set goals to publish my thoughts more often, I'm not always consistent with the follow-through. This is a small sample of the work that I've published."
+        text="Collectively, I've received over 150,000 unique views through various channels for my writings. Although I try to set goals to publish my thoughts more often, I'm not always consistent with the follow-through. This is a small sample of the work that I've published."
         type="writing"
       />
       <Posts />

@@ -35,7 +35,7 @@ const Grid = styled.div`
   grid-gap: 25px;
   width: 50%;
   margin: 1em auto 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  grid-template-columns: repeat(1fr);
   grid-auto-rows: auto;
   @media (max-width: 920px) {
     grid-auto-rows: auto;

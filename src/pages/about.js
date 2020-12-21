@@ -49,8 +49,8 @@ const Bio = () => (
       <div style={{ marginTop: ".5em" }}>
         <Text>
           Currently developing{" "}
-          <Link to="/work/urbancrop" style={{ color: "#F88747" }}>
-            UrbanCrop
+          <Link to="/work/parakeet" style={{ color: "#f9887a" }}>
+            Parakeet
           </Link>{" "}
           in Mexico City.
         </Text>
@@ -71,7 +71,7 @@ const About = () => (
       />
       <Competencies
         title="Technologies"
-        text="aws cloud infrastructure | javaScript | react native | react.JS | vue.JS | gatsby.JS |  node.JS | mongoDB | mySQL | express | graphQL | redux | flutter | firebase | git | github"
+        text="aws cloud infrastructure | javaScript | react native | react.JS | vue.JS | gatsby.JS |  node.JS | mongoDB | mySQL | express | graphQL | redux | objective-C | swift | flutter | firebase | git | github"
       />
       <Competencies
         title="Languages"

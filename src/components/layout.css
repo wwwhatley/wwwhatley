@@ -672,17 +672,17 @@ pre tt:after {
 }
 
 .portfolio > h2 {
-  margin: 1.25em 0 1px 0;
-  font-family: "Ubuntu", sans-serif;
-  color: #47566e;
-  font-size: 26px;
-}
-
-.portfolio > h3 {
   margin: 0.5em 0;
   font-family: "Ubuntu", sans-serif;
   color: #47566e;
-  font-size: 26px;
+  font-size: 28px;
+}
+
+.portfolio > h3 {
+  margin: 1em 0 0.5em;
+  font-family: "Ubuntu", sans-serif;
+  color: #47566e;
+  font-size: 22px;
 }
 
 .portfolio > p {

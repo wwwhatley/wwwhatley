@@ -63,7 +63,7 @@ const About = () => (
   <Layout type="about">
     <SEO title="Hi!" />
     <div className="fadeIn">
-      <TitleHeader title="CEO | CTO | Technologist" type="about" />
+      <TitleHeader title="CTO | CEO | Technologist" type="about" />
       <Bio />
       <Competencies
         title="Management"
@@ -71,15 +71,19 @@ const About = () => (
       />
       <Competencies
         title="Technologies"
-        text="aws cloud infrastructure | javaScript | react native | react.JS | vue.JS | gatsby.JS |  node.JS | mongoDB | mySQL | express | graphQL | redux | objective-C | swift | flutter | firebase | git | github"
+        text="aws cloud infrastructure | javaScript | react native | react.JS | vue.JS | gatsby.JS | next.JS | node.JS | mongoDB | mySQL | express | graphQL | redux | objective-C | swift | python | flutter | firebase | git | github"
+      />
+      <Competencies
+        title="Certifications"
+        text="renewable energy and green building entrepreneurship - duke university | startup accelerator - university of tampa"
       />
       <Competencies
         title="Languages"
-        text="english (native) | spanish (intermediate)"
+        text="english (native) | spanish (advanced) | portugués (beginner)"
       />
       <Competencies
         title="Interests"
-        text="new technologies | sustainability | quantum computation | space | cooking | traveling | culture | people | "
+        text="urban development | agriculture | sustainability | quantum computation | space | cooking | traveling | culture | people"
       />
     </div>
   </Layout>
